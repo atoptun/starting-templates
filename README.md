@@ -23,13 +23,13 @@
 
 ## 🛠 Доступні шаблони
 
-1. Neoversity JS Advanced Homework
+### 1. Neoversity JS Advanced Homework
 
 ```bash
 npx degit https://github.com/atoptun/starting-templates#goit-js-adv-hw . --force
 ```
 
-1. Vite + Vanilla JS + SAAS + Image compressors
+### 2. Vite + Vanilla JS + SAAS + Image compressors
 
 ```bash
 npx degit https://github.com/atoptun/starting-templates#vite-vanilla-saas . --force

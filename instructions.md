@@ -10,7 +10,7 @@ cd project_folder
 Run a command in project folder
 
 ```bash
-npx degit https://github.com/atoptun/starting-templates#goit-js-adv-hw . --force
+npx degit https://github.com/atoptun/starting-templates#js/goit-js-adv-hw . --force
 ```
 
 ## After degit

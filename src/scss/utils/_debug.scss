@@ -1,0 +1,36 @@
+/****
+  DEBUG MODE
+****/
+:root {
+  --debug: 1px dashed red;
+  /* --debug: none; */
+}
+
+/* * {
+  outline: var(--debug);
+} */
+
+body.debug-mode {
+  * {
+    outline: 1px dashed red;
+  }
+
+  /* Highlight images without alt */
+  img:not([alt]) {
+    outline: 5px solid fuchsia !important;
+    filter: blur(2px);
+  }
+
+  /* Empty links or buttons */
+  a:empty,
+  button:empty {
+    outline: 5px solid orange !important;
+  }
+
+  /* Links that lead nowhere */
+  a[href='#'],
+  a[href=''] {
+    background: yellow !important;
+    border: 2px dashed black !important;
+  }
+}

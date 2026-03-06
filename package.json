@@ -1,0 +1,39 @@
+{
+  "name": "starting-templates",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Andrii Toptun <topa1978@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch": "npx vite build --watch",
+    "format": "npx prettier --write ."
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "fast-glob": "^3.3.3",
+    "imagemin": "^9.0.1",
+    "imagemin-webp": "^8.0.0",
+    "postcss": "^8.5.8",
+    "postcss-sort-media-queries": "^5.2.0",
+    "prettier": "^3.8.1",
+    "sass": "^1.97.3",
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.1",
+    "vite": "^7.3.1",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  }
+}

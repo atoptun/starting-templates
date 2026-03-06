@@ -10,7 +10,7 @@ cd project_folder
 Run a command in project folder
 
 ```bash
-npx degit https://github.com/atoptun/starting-templates#vite-vanilla-saas . --force
+npx degit https://github.com/atoptun/starting-templates#js/vite-vanilla-saas . --force
 ```
 
 ## After degit

@@ -9,7 +9,6 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
-
 export default defineConfig(({ command }) => {
   return {
     define: {
@@ -91,14 +90,21 @@ export default defineConfig(({ command }) => {
         jpg: {
           quality: 86,
         },
+        webp: {
+          quality: 80,
+        },
+        avif: {
+          quality: 70,
+        },
+        exclude: /\.svg$/i,
       }),
-      {
-        ...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
-          destination: './src/img/webp/',
-          plugins: [imageminWebp({ quality: 86 })],
-        }),
-        apply: 'serve',
-      },
+      // {
+      //   ...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
+      //     destination: './src/img/webp/',
+      //     plugins: [imageminWebp({ quality: 86 })],
+      //   }),
+      //   apply: 'build',
+      // },
     ],
   };
 });

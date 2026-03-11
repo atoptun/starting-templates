@@ -4,17 +4,11 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
-  color: rgb(var(--text-color-primary) / 0.5);
-  background-color: rgb(var(--bg-color-primary));
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-body.is-menu-open {
-  overflow: hidden;
-  touch-action: none;
-  height: 100vh;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -31,56 +25,19 @@ body.is-menu-open {
   overflow: hidden;
 }
 
-section[id] {
-  scroll-margin-top: 50px;
+.task-list {
+  display: flex;
+  /* gap: 24px; */
 }
 
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.task-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  margin: 24px;
+
+  background-color: greenyellow;
+  color: blue;
 }
-
-.container {
-  width: 100%;
-  max-width: 375px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  section[id] {
-    scroll-margin-top: 50px;
-  }
-
-  .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-
-  .container {
-    max-width: 1280px;
-    padding-left: 128px;
-    padding-right: 128px;
-  }
-}
-
 /* ========== /COMMON ========== */

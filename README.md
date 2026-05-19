@@ -34,3 +34,9 @@ npx degit https://github.com/atoptun/starting-templates#js/goit-js-adv-hw . --fo
 ```bash
 npx degit https://github.com/atoptun/starting-templates#js/vite-vanilla-saas . --force
 ```
+
+### 3. Vite + Typscript + Vite plugins
+
+```bash
+npx degit https://github.com/atoptun/starting-templates#ts/vite-ts . --force
+```

@@ -1,0 +1,38 @@
+{
+  "name": "starting-templates",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Andrii Toptun <topa1978@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/starting-templates/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@spiriit/vite-plugin-svg-spritemap": "^7.0.0",
+    "@types/node": "^25.9.0",
+    "eslint": "^10.4.0",
+    "glob": "^13.0.6",
+    "postcss": "^8.5.8",
+    "postcss-sort-media-queries": "^5.2.0",
+    "prettier": "^3.8.1",
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4",
+    "vite": "^8.0",
+    "vite-plugin-checker": "^0.13.0",
+    "vite-plugin-compression2": "^2.5.3",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "izitoast": "^1.4.0",
+    "modern-normalize": "^3.0.1",
+    "simplelightbox": "^2.14.3"
+  }
+}

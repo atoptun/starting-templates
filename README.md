@@ -39,4 +39,11 @@ npx degit https://github.com/atoptun/starting-templates#js/vite-vanilla-saas . -
 
 ```bash
 npx degit https://github.com/atoptun/starting-templates#ts/vite-ts . --force
+
+```
+
+### 4. Vite + React
+
+```bash
+npx degit https://github.com/atoptun/starting-templates#react/goit-neo-react-hw . --force
 ```

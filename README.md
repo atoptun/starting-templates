@@ -16,27 +16,18 @@ Each configuration is stored in a separate branch.
 2. Deploy the required template (replace `#branch` with the branch name):
 
     ```bash
-    npx degit https://github.com/atoptun/starting-templates#branch . --force
+    npx degit https://github.com/atoptun/starting-templates#react/goit-neo-react-hw . --force
     ```
 
-3. Follow the instructions in the instruction.md for any required adjustments.
+3. Install packages
 
-## 🛠 Available Templates
+    ```bash
+    npm install
+    ```
 
-### 1. Neoversity JS Advanced Homework
+    ```bash
+    corepack enable
+    pnpm install
+    ```
 
-```bash
-npx degit https://github.com/atoptun/starting-templates#js/goit-js-adv-hw . --force
-```
-
-### 2. Vite + Vanilla JS + SAAS + Image compressors
-
-```bash
-npx degit https://github.com/atoptun/starting-templates#js/vite-vanilla-saas . --force
-```
-
-### 3. Vite + Typscript + Vite plugins
-
-```bash
-npx degit https://github.com/atoptun/starting-templates#ts/vite-ts . --force
-```
+4. Enjoy

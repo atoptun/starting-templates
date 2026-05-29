@@ -33,3 +33,19 @@ declare module '*.mp3' {
   const src: string;
   export default src;
 }
+
+declare module 'virtual:svg-sprite' {
+  const content: string;
+  export default content;
+}
+
+declare module 'virtual:icons-sprite' {
+  const content: string;
+  export default content;
+}
+
+declare module 'virtual:file-icons-sprite' {
+  const content: string;
+  export default content;
+}
+

@@ -7,9 +7,12 @@ import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import checker from 'vite-plugin-checker';
-import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
+// import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
 // import { compression } from 'vite-plugin-compression2';
 // import webfontDownload from 'vite-plugin-webfont-dl';
+// import createSvgSpritePlugin from 'vite-plugin-svg-spriter';
+// import IconSpritePlugin from './vite-plugins/vite-plugin-icon-sprite';
+// import svgSpritePlugin from '@pivanov/vite-plugin-svg-sprite';
 
 export default defineConfig(({ command }) => {
   return {
@@ -72,7 +75,7 @@ export default defineConfig(({ command }) => {
         './js/**/*.ts',
         './css/**/*.css',
         './icons/**/*.svg',
-        './images/**/*.{jpg,jpeg,png,gif,webp,avif}',
+        './images/**/*.{svg,jpg,jpeg,png,gif,webp,avif}',
       ]),
       checker({
         typescript: true,
@@ -80,7 +83,14 @@ export default defineConfig(({ command }) => {
           lintCommand: 'eslint "./**/*.{ts,tsx}"',
         },
       }),
-      VitePluginSvgSpritemap('./icons/**/*.svg', { injectSvgOnDev: true }),
+      // VitePluginSvgSpritemap('./icons/**/*.svg', { injectSvgOnDev: true }),
+      // createSvgSpritePlugin({svgFolder: SVG_FOLDER_PATH}),
+      // IconSpritePlugin(),
+      // svgSpritePlugin({
+      //   iconDirs: ['src/icons'],
+      //   symbolId: 'icon-[name]',
+      //   fileName: 'sprite.svg',
+      // }),
       ViteImageOptimizer({
         cache: true,
         cacheLocation: path.resolve(__dirname, 'node_modules/.vite-image-optimizer-cache'),
@@ -89,6 +99,7 @@ export default defineConfig(({ command }) => {
         jpg: { quality: 80 },
         webp: { quality: 75 },
         avif: { quality: 75 },
+        exclude: /\.svg$/,
         // svg: {
         //   plugins: [
         //     { name: 'removeViewBox', active: false },
@@ -97,6 +108,5 @@ export default defineConfig(({ command }) => {
         // },
       }),
     ],
-    
   };
 });
